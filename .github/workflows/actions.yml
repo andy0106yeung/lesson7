@@ -20,7 +20,7 @@ jobs:
         with:
           who-to-greet: "Andy"
       - name: time
-        run: echo "'greeting ime:' ${{ steps.hello-world-action.output.time }}"
+        run: echo "'greeting ime:' ${{ steps.hello-world-action.outputs.time }}"
       - name: docker acion
         uses: docker://hello-world:latest
           
