@@ -15,12 +15,12 @@ jobs:
       - name: ls
         run: ls
       - name: hello world action
-        id: ehllo-world-action
+        id: hello-world-action
         uses: actions/hello-world-javascript-action@main
         with:
           who-to-greet: "Andy"
       - name: time
-        run: echo "'greeting ime: ' ${{ steps.hello-world-action.output.time }}"
+        run: echo "'greeting ime:' ${{ steps.hello-world-action.output.time }}"
       - name: docker acion
         uses: docker://hello-world:latest
           
