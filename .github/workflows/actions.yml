@@ -11,7 +11,7 @@ jobs:
       - name: list files
         run: ls
       - name: checkout repo
-        uses: actions/checkout@4.4.0
+        uses: actions/checkout@v4.1.1
       - name: ls
         run: ls
       - name: hello world action
